@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+    @apply w-[5px];
+}
+
+::-webkit-scrollbar-track {
+    @apply  bg-transparent rounded;
+}
+  
+::-webkit-scrollbar-thumb { 
+    @apply  bg-zinc-400 rounded;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    @apply  bg-zinc-500;
+}
+    
+html.dark ::-webkit-scrollbar-thumb { 
+    @apply bg-zinc-600 rounded;
+}
+    
+html.dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-zinc-700;
+}
